@@ -1,0 +1,201 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.2fr 1.2fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer";
+    grid-gap: 0.4rem;
+    font-weight: 1000;
+    font-size: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    max-width: 10000px; 
+}
+
+@media screen and(max-width 480px) {
+    li{background: blue;
+    }
+    .li{font-size: 18px;
+    }
+    
+    @media only screen and (min-width: 600px) {
+  .body {background: green;}
+}
+
+
+@media only screen and (min-width: 768px) {
+  .body {background: red;}
+    
+} 
+    
+    @media only screen and (min-width: 992px) {
+  .body {background: orange;}
+} 
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+}
+
+nav {
+    float: right;
+    background: ;
+    grid-area: nav;
+    color: white;
+    font-size: 25px
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size:25px;
+}
+
+nav li {
+    display: inline-block;
+    align-content: right;
+    float:right;
+    margin-right: 200px;
+    padding-left:30px;
+    padding-top: 40px
+}
+
+body {
+    background-color: lightblue;
+
+}
+
+main {
+    background: lightblue;
+    grid-area: main;
+    width: 100%;
+    padding-right: 50;
+    text-align: center;
+
+}
+
+main .p {
+
+    font-size: 60px;
+}
+
+#sidebar {
+    background: lightblue;
+    grid-area: sidebar;
+    width: 100% font-align:center;
+    position: center;
+
+}
+
+#content1 {
+    background: lightblue;
+    grid-area: content1;
+    text-align: center;
+
+}
+
+#content2 {
+    background: lightblue;
+    grid-area: content2;
+    text-align: center;
+
+}
+
+#content3 {
+    background: lightblue;
+    grid-area: content3;
+    text-align: center;
+
+}
+
+footer {
+    background: lightblue;
+    grid-area: footer;
+    text-align: right;
+    font-size:30px
+
+}
+
+iframe {
+
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    margin: auto;
+    left: 30px
+}
+
+h1 {
+
+    text-align: center;
+    color: darkslategray;
+    font-size: 42px;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+
+}
+form {
+
+    text-align: center;
+
+}
+
+button {
+    display: block;
+    background-color: #1c87c9;
+    border: dotted;
+    color: white;
+    padding: 25px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#p0 {
+    text-indent: 2em;
+}
+
+#p1 {
+    text-indent: 4em;
+
+}
+
+#p2 {
+    text-indent: 15px;
+    font-size: 20px;
+}
+
+#p3 {
+    text-indent: 10%;
+}
+
+p.ex1 {
+    max-width: 850px;
+    text-align: center;
+    padding: 110px;
+    margin: auto;
+}
+p {
+    font-size: 25px
+}
+h2 {
+    text-align: center;
+    font-size: 30px
+}
+
+subject {
+    padding-left:30px;
+    padding-bottom: 30px;
+}
